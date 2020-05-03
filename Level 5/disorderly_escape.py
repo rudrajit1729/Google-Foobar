@@ -55,14 +55,8 @@ def factorial(n):
     
     
 def solution(w, h, s):
-    grid = 0
-    for pw in partitions(w):
-        for ph in partitions(h):
-            m = count(pw, w)*count(ph, h)
-            grid+=m*(s**sum([sum([gcd(i, j) for i in pw]) for j in ph]))
-
-    return str(grid//(factorial(w)*factorial(h)))# Took me 20 mins in this single sentence
-
+   #Source Code - You Wish 
+#Mail me if you are genuinely stuck I shall provide the code
 # Sample
 print(solution(2,3,4))
 
